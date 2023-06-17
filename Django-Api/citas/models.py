@@ -32,9 +32,9 @@ class Cita(models.Model):
         max_length=100, choices=Tipo_servicio.choices, default=Tipo_servicio.BARBERIA)
     profesional = models.CharField(
         max_length=100, blank=True, verbose_name='Profesional')
-    fecha = models.CharField(max_length=100, blank=False,
+    fecha = models.DateField(max_length=100, blank=False,
                              verbose_name='Fecha del servicio')
-    hora = models.CharField(max_length=100, blank=False,
+    hora = models.TimeField(max_length=100, blank=False,
                             verbose_name='Hora del servicio')
 
     def __str__(self):

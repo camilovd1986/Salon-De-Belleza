@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -16,7 +23,7 @@
 
             <div class="column">
                 <label for="the-name">Nombre completo</label>
-                <input type="text" name="nombre" id="the-name">
+                <input type="text" name="nombre" id="the-name" required="required">
 
                 <label for="tipo_documento">Tipo de documento</label>
                 <select name="tipo_documento" id="tipo_documento">
@@ -27,16 +34,16 @@
                 </select>
 
                 <label for="numero_documento">Numero de identificacion</label>
-                <input type="number" name="numero_documento" id="numero_documento">
+                <input type="number" name="numero_documento" id="numero_documento" required="required">
 
                 <label for="direccion">Direccion</label>
-                <input type="text" name="direccion" id="direccion">
+                <input type="text" name="direccion" id="direccion" required="required">
 
                 <label for="the-phone">Telefono</label>
-                <input type="number" name="telefono" id="the-phone">
+                <input type="number" name="telefono" id="the-phone" required="required">
 
                 <label for="the-email">Email</label>
-                <input type="email" name="email" id="the-email">
+                <input type="email" name="email" id="the-email" required="required">
 
             </div>
             <div class="column">
@@ -53,10 +60,10 @@
                 <input type="text" name="profesional" id="the-name">
 
                 <label for="the-fecha">Fecha</label>
-                <input type="text" name="fecha" id="the-fecha">
+                <input type="date" class="form-control bg-transparent p-4 datetimepicker-input" placeholder="Select Date" data-target="#date" data-toggle="datetimepicker" required="required"/>
 
                 <label for="the-hora">Hora</label>
-                <input type="text" name="hora" id="the-hora">
+                <input type="datetime" class="form-control bg-transparent p-4 datetimepicker-input" placeholder="Select Time" data-target="#time" data-toggle="datetimepicker-input" required="required"/>
 
 
                 <button>ENVIAR</button>
