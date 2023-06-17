@@ -14,6 +14,7 @@ class Cita(models.Model):
         BARBERIA = "BARBERIA",
         MASAJES = "MASAJES",
         PELUQUERIA = "PELUQUERIA",
+        FACIAL = "FACIAL",
         UNAS = "UNAS",
 
     nombre = models.CharField(
